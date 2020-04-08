@@ -1,0 +1,155 @@
+#actorSection{
+    background-image: linear-gradient(to right, rgb(255, 230, 230), rgb(255, 235, 204), rgb(255, 255, 230), rgb(230, 255, 230),rgb(245, 245, 240));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+.commomCard{
+  height:446px;
+  width:300px;
+  margin:20px;
+  cursor:pointer;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   text-align:center;
+   background-color: white;
+   /* border: 2px solid red; */
+
+}
+
+.commomCard img{
+   width:100%;
+    height:50%;
+}
+
+.actorDescriptions{
+  color:gray;
+  font-size:18px;
+}
+.social-media-icons a{
+      text-decoration:none;
+      font-size:22px;
+      color:black;
+      margin:0 5px;
+}
+
+.social-media-icons a:hover{
+  opacity:0.7;
+}
+.contactItems{
+  border:none;
+  outline:0;
+  display: inline-block;
+padding: 8px;
+  color: white;
+   background-color: #000;
+ text-align: center;
+cursor: pointer;
+width: 100%;
+ font-size: 18px;
+}
+.contactItems:hover{
+  opacity:0.7;
+}
+
+
+/* //Music Section */
+
+#textHeader{
+  text-align: center;
+  font-size: 45px;
+  font-weight: 500;
+  font-family:monospace;
+  color:rgb(0, 255, 204);
+animation: myAnimation 2s ease-in-out infinite alternate;
+}
+@keyframes myAnimation {
+    from{
+      color:red;
+    }
+    to{
+      color:orange;
+    }
+}
+#logoSmile{
+  color:pink;
+}
+
+
+
+#musicSection{
+  background-image: url("1792304.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  opacity: 0.9;
+}
+#scrolledImageSection{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* justify-content: center; */
+}
+
+.commomImageSection{
+  height:330px;
+  width:280px;
+  margin:20px;
+  cursor:pointer;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   text-align:center;
+   background-color: white;
+   /* border: 2px solid red; */
+}
+.commomImageSection img{
+  height: 80%;
+  width: 100%;
+}
+
+
+
+
+#funWithMusicSection{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  background-image:linear-gradient(to right,rgb(16, 16, 10),rgb(93, 93, 60), rgb(31, 31, 20), rgb(31, 31, 20),rgb(16, 16, 10));
+
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: cover;
+}
+.funWithMusicCommonClass{
+background-color: white;
+  height: 290px;
+  width: 225px;
+   max-width: 250px;
+  max-height: 400px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ align-items: center;
+ text-align: center;
+ cursor: pointer;
+ margin: 50px 50px;
+ /* border:3px solid red; */
+
+
+}
+.funWithMusicCommonClass img{
+  height:78%;
+  width: 100%;
+
+  box-shadow: 0px 0px 20px black;
+}
+.audioSection audio{
+  width: 95%;
+}
