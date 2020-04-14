@@ -1,3 +1,6 @@
+body{
+  background-color: black;
+}
 #actorSection{
     background-image: linear-gradient(to right, rgb(255, 230, 230), rgb(255, 235, 204), rgb(255, 255, 230), rgb(230, 255, 230),rgb(245, 245, 240));
     background-position: center;
@@ -11,12 +14,77 @@
   flex-wrap:wrap;
   justify-content:space-around;
 }
+.carousel-indicators li{
+  visibility: hidden;
+}
+
+#sliderImg{
+  border-radius:50%;
+  border: 2px solid gray;
+  /* animation: glowBorder 2s ease-in-out infinite alternate; */
+  box-shadow: 0px 0px 5px #b8b894;
+}
+/* @keyframes glowBorder {
+  from{
+    box-shadow: 0px 0px 2px #d6d6c2,0px 0px 2px #d6d6c2,0px 0px 2px #ccccb3,0px 0px 2px #ccccb3;
+  }
+  to{
+    box-shadow: 0px 0px 2px #d6d6c2,0px 0px 2px #c2c2a3,0px 0px 2px #c2c2a3,0px 0px 2px #c2c2a3;
+  }
+} */
+
+/* Description Section */
+#about-para {
+    padding: 12px;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: grey;
+    line-height: 30px;
+    font-weight: 150;
+    font-size: 1.3rem;
+}
+.text-highlight {
+    color: #ffa32e;
+    font-weight: 600;
+
+}
+
+ #caption{
+   position: absolute;
+   left:35%;
+   top: 60%;
+ }
+#caption h1{
+  font-size: 4.5rem;
+  font-weight: bold;
+  font-family: cursive;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #ff1a1a;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  to{
+    text-shadow: 0px 0px 5px red,0px 0px 10px red,0px 0px 15px #ffff1a,0px 0px 20px #ffff1a,0px 0px 25px #ffff1a,0px 0px 30px #ffff1a,0px 0px 40px #ffff1a;
+  }
+  from{
+       text-shadow: 0px 0px 10px red,0px 0px 15px #ffff66,0px 0px 20px #ffff66, 0px 0px 25px #ffff66, 0px 0px 30px #ffff66,0px 0px 35px #ffff66,0px 0px 40px #ffff66,0px 0px 45px #ffff66,;
+  }
+
+}
+
+/* ActorSection */
+
+
 .commomCard{
-  height:446px;
-  width:300px;
-  margin:20px;
+  height:350px;
+  width:260px;
+  margin:30px;
   cursor:pointer;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
    text-align:center;
    background-color: white;
    /* border: 2px solid red; */
@@ -27,17 +95,33 @@
    width:100%;
     height:50%;
 }
+.actorName{
+  font-size: 27px;
+}
 
 .actorDescriptions{
   color:gray;
-  font-size:18px;
+  font-size:17px;
+
 }
 .social-media-icons a{
       text-decoration:none;
       font-size:22px;
       color:black;
       margin:0 5px;
+      /* border: 2px solid gray; */
+      /* border-radius: 50%; */
+      /* animation: iconsAnimation 2s ease-in-out infinite alternate; */
+
 }
+/* @keyframes iconsAnimation {
+  from{
+      box-shadow: 0px 0px 10px gray;
+  }
+  to{
+    border-radius: 0px 0px 20px yellow;
+  }
+} */
 
 .social-media-icons a:hover{
   opacity:0.7;
@@ -57,16 +141,23 @@ width: 100%;
 .contactItems:hover{
   opacity:0.7;
 }
+#AmitabhCard{
+  border-bottom: 5px solid #0000CD;
+  background-color: #ffffe6;
+}
+
+
+
 
 
 /* //Music Section */
 
-#textHeader{
+.section-heading{
   text-align: center;
   font-size: 45px;
   font-weight: 500;
-  font-family:monospace;
-  color:rgb(0, 255, 204);
+  font-family:cursive;
+  color:#66ffcc;
 animation: myAnimation 2s ease-in-out infinite alternate;
 }
 @keyframes myAnimation {
@@ -77,20 +168,20 @@ animation: myAnimation 2s ease-in-out infinite alternate;
       color:orange;
     }
 }
-#logoSmile{
-  color:pink;
+.section-heading span{
+  color:red;
+  /* background-color: red; */
 }
 
 
-
-#musicSection{
-  background-image: url("1792304.jpg");
+#funMusicSection{
+  background-image: url("1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 70vh;
-  opacity: 0.9;
+  height:100%;
+  /* opacity: 0.9; */
 }
 #scrolledImageSection{
   display: flex;
@@ -105,30 +196,58 @@ animation: myAnimation 2s ease-in-out infinite alternate;
   width:280px;
   margin:20px;
   cursor:pointer;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
    text-align:center;
-   background-color: white;
+   background-color: #e6f2ff;
+   border: 2px solid gray;
+   /* text-align: center; */
+   /* border-radius: 4px; */
    /* border: 2px solid red; */
 }
 .commomImageSection img{
-  height: 80%;
+  height: 84%;
   width: 100%;
 }
+.commomImageSection h1{
+  color:#ff9900;
+  font-size: 2rem;
+  /* animation: textAnimation 2s ease-in-out infinite alternate; */
+
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+/* @keyframes textAnimation {
+  from{
+    visibility: hidden;
+  }
+  to{
+    visibility: visible;
+  }
+
+} */
 
 
+/* Playing music section */
 
+
+#musicSection{
+      /* background-image:linear-gradient(to right,rgb(16, 16, 10),rgb(93, 93, 60), rgb(31, 31, 20), rgb(31, 31, 20),rgb(16, 16, 10)); */
+  background-color:black;
+          background-position: center;
+          background-repeat: no-repeat;
+           background-size: cover;
+           /* opacity: 0.5; */
+            /* filter: blur(8px); */
+            }
 
 #funWithMusicSection{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content:space-around;
-  background-image:linear-gradient(to right,rgb(16, 16, 10),rgb(93, 93, 60), rgb(31, 31, 20), rgb(31, 31, 20),rgb(16, 16, 10));
-
-    background-position: center;
-    background-repeat: no-repeat;
-     background-size: cover;
+  opacity: 0.9;
 }
+
 .funWithMusicCommonClass{
 background-color: white;
   height: 290px;
@@ -140,10 +259,10 @@ background-color: white;
  text-align: center;
  cursor: pointer;
  margin: 50px 50px;
- /* border:3px solid red; */
+ opacity: 0.9;
 
+ }
 
-}
 .funWithMusicCommonClass img{
   height:78%;
   width: 100%;
@@ -151,5 +270,218 @@ background-color: white;
   box-shadow: 0px 0px 20px black;
 }
 .audioSection audio{
-  width: 95%;
+  width: 98%;
+}
+
+     /* Artist Container Section */
+
+      #artistSection{
+       background-image: linear-gradient(to right,rgb(255, 255, 230),rgb(230, 255, 255));
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+     }
+ #artistContainer{
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+}
+#artistContainer img{
+  height: 260px;
+  width: 260px;
+
+  text-align: center;
+  border-radius: 50%;
+  margin: 30px;
+
+/* animation: myAnimationArtist 2s ease-in-out infinite alternate; */
+}
+
+
+/* #gallery img:hover{
+    box-shadow: 10px 10px 20px gray;
+} */
+@keyframes myAnimationArtist {
+  0%{
+      box-shadow: 0px 0px 0px gray;
+  }
+  20%{
+      box-shadow: 0px 0px 3px gray;
+  }
+
+  40%{
+      box-shadow: 0px 0px 6px gray;
+  }
+  60%{
+      box-shadow: 0px 0px 9px gray;
+  }
+
+  80%{
+      box-shadow: 0px 0px 12px gray;
+  }
+  100%{
+      box-shadow: 0px 0px 15px gray;
+  }
+
+}
+
+
+/* Contact Section */
+
+
+#contact {
+
+
+
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+
+    color: white;
+    padding-bottom: 40px;
+}
+
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+
+#contact-form {
+    margin-left: 20%;
+}
+
+#contact-container {
+    display: flex;
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    /*#2857a4*/
+
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    /*#1a1a1a;*/
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+#contact .social-icons li a i {
+
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+.social-icons li a i
+ {
+    padding: 15px;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    color: #ff5c33;
+    font-weight: bold;
+    animation: myAnimationIcon 5s ease-in-out infinite alternate;
+    margin:0px 5px 0px 5px;
+ }
+@keyframes myAnimationIcon
+  {
+    from
+     {
+       background-color:none;
+     }
+    33%
+     {
+       background-color:#c2d6d6;
+     }
+    66%
+     {
+       background-color: #a3c2c2;
+     }
+    to
+    {
+      background-color:#94b8b8;
+    }
+  }
+
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
 }

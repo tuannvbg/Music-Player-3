@@ -8,21 +8,101 @@
          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
          crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel = "stylesheet" type = "text/css" href = "myStyle.css" />
 
 
 
   </head>
   <body>
+    <section id="slider">
+      <div id="demo" class="carousel slide" data-ride="carousel" class="right carousel-control">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+
+    <div class="carousel-item active shadow-lg">
+      <img src="taylor-swift.jpg" style="opacity:0.5;"  alt="" class="shadow" width="100%" height="700px">
+    </div>
+
+    <div class="carousel-item shadow-lg">
+      <img src="image1.jpg" style="opacity:0.5;"  alt="" class="shadow" width="100%" height="700px">
+    </div>
+
+    <div class="carousel-item shadow-lg">
+      <img src="Arjit.jpg" style="opacity:0.5;"  alt="" class="shadow" width="100%" height="700px">
+    </div>
+
+    <div class="carousel-item  shadow-lg">
+      <img src="guitarist_guitar.jpg" class="shadow"  style="opacity:0.5;" alt="Chicago" width="100%" height="700px">
+
+    </div>
+    <div class="carousel-item  shadow-lg">
+      <img src="image4.jpg" class="shadow"  style="opacity:0.5;" alt="Chicago" width="100%" height="700px">
+    </div>
+
+
+
+  </div>
+
+  <!-- Left and right controls -->
+  <!-- <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a> -->
+
+
+<div style="position:absolute;top:23%; left:5%;">
+  <img src="justin.jpg" class="animated infinite bounceIn slow" alt="Smiley face" width="230" height="230" id="sliderImg">
+</div>
+<div style="position:absolute;top:23%; right:5%;">
+  <img src="selena.jpg" class="animated infinite bounceIn slow" alt="Smiley face" width="230" height="230" id="sliderImg">
+</div>
+
+<div id="caption">
+  <h1>NO MUSIC</h1>
+  <h1>NO LIFE</h1>
+</div>
+
+</div>
+
+
+    </section>
+<section id="descriptionSection"  style="background-color:white;">
+  <div id="about-para">
+    <p>Music is a form of art; an expression of emotions through
+    harmonic frequencies. <span class="text-highlight">Music is also
+    a form  of entertainment</span> that puts sounds together in a
+    way  that people like, findinteresting or dance to. Most music
+    includes people singing  with their voicesor <span class="text-highlight">
+    playing musical instruments,</span> such as the piano, guitar, drums or violin.
+   Music gives a soul to the universe, wings to the mind, flight to the
+   imagination and life to everything.Music is the shorthand of emotion</p>
+  </div>
+</section>
+
+
+
     <section id="actorSection">
     <div id="container">
 
-
-
-   <div class="commomCard">
+   <div class="commomCard" id="AmitabhCard">
       <img src="Amitabh.jpg" alt="salman khan"  class="animated infinite rotateInUpLeft delay-2s">
       <h1 class="actorName" style="color:#0000CD;">Amitabh Bachchan</h1>
-      <p class="actorDescriptions"> Indian film actor, film producer, television host, occasional playback singer and former politician.  </p>
+      <p class="actorDescriptions"> Indian film actor, film producer,
+         television host,and former politician.  </p>
       <div class="social-media-icons" style="margin: 15px 0;">
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -31,92 +111,98 @@
      </div>
 
 
-      <p><button class="contactItems" style="background-color:#0000CD;">Contact</button></p>
+      <!-- <p><button class="contactItems" style="background-color:#0000CD;">Contact</button></p> -->
   </div>
 
 
- <div class="commomCard">
+ <div class="commomCard" style="border-bottom: 5px solid black; background-color:#f6f6ee;">
     <img src="shah-rukh-khan-wallpaper.jpg" alt="salman khan"   class="animated infinite rotateIn delay-2s slower">
     <h1 class="actorName">Shahrukh Khan</h1>
-    <p class="actorDescriptions">SRK, is an Indian actor, film producer, co-owner of the IPL cricket team KKR, and television personality.</p>
+    <p class="actorDescriptions">SRK, is an Indian actor, film producer
+      and television personality.</p>
     <div class="social-media-icons" style="margin: 15px 0;">
       <a href="#"><i class="fab fa-instagram"></i></a>
       <a href="#"><i class="fab fa-twitter"></i></a>
       <a href="#"><i class="fab fa-linkedin-in"></i></a>
       <a href="#"><i class="fab fa-facebook"></i></a>
    </div>
-    <p><button class="contactItems">Contact</button></p>
+    <!-- <p><button class="contactItems">Contact</button></p> -->
  </div>
 
- <div class="commomCard">
+ <div class="commomCard" style="border-bottom: 5px solid #663399; background-color:#f0f5f5;">
     <img src="dalman.jpg" alt="salman khan"   class="animated infinite zoomIn delay-2s">
     <h1 class="actorName" style="color:#663399;">Salman Khan</h1>
-    <p class="actorDescriptions">Indian film actor, producer, occasional singer, television personality and hosting  the reality show, Bigg Boss since 2010.</p>
+    <p class="actorDescriptions">Indian film actor, producer,
+       and hosting the reality show, Bigg Boss.</p>
     <div class="social-media-icons" style="margin: 15px 0;">
       <a href="#"><i class="fab fa-instagram"></i></a>
       <a href="#"><i class="fab fa-twitter"></i></a>
       <a href="#"><i class="fab fa-linkedin-in"></i></a>
       <a href="#"><i class="fab fa-facebook"></i></a>
    </div>
-    <p><button class="contactItems" style="background-color:#663399;" >Contact</button></p>
+    <!-- <p><button class="contactItems" style="background-color:#663399;" >Contact</button></p> -->
 </div>
 
 
-<div class="commomCard">
+<div class="commomCard" style="border-bottom: 5px solid red; background-color:#fff5e6;">
    <img src="Akshay.jpg" alt="salman khan"  class="animated infinite jackInTheBox delay-2s slower">
    <h1 class="actorName" style="color:red;">Akshay Kumar</h1>
-   <p class="actorDescriptions"> Indian-born Canadian actor, producer, martial artist and television personality who works in Bollywood films. </p>
+   <p class="actorDescriptions"> Indian-born Canadian actor, producer, martial
+     artist and television personality.</p>
    <div class="social-media-icons" style="margin: 15px 0;">
      <a href="#"><i class="fab fa-instagram"></i></a>
      <a href="#"><i class="fab fa-twitter"></i></a>
      <a href="#"><i class="fab fa-linkedin-in"></i></a>
      <a href="#"><i class="fab fa-facebook"></i></a>
   </div>
-   <p><button class="contactItems" style="background-color:red;">Contact</button></p>
+   <!-- <p><button class="contactItems" style="background-color:red;">Contact</button></p> -->
  </div>
 
 
- <div class="commomCard">
+ <div class="commomCard" style="border-bottom: 5px solid #C71585; background-color:#ffe6ff;">
     <img src="selena-gomez.jpg"  class="animated infinite zoomIn delay-2s" alt="salman khan">
     <h1 class="actorName" style="color:#C71585;">Selena Gomez</h1>
-    <p class="actorDescriptions">American singer, songwriter, actress,television producer and children's television series Barney & Friends.  </p>
+    <p class="actorDescriptions">American singer, songwriter, actress,and children's
+      television series Barney & Friends.  </p>
     <div class="social-media-icons" style="margin: 15px 0;">
       <a href="#"><i class="fab fa-instagram"></i></a>
       <a href="#"><i class="fab fa-twitter"></i></a>
       <a href="#"><i class="fab fa-linkedin-in"></i></a>
       <a href="#"><i class="fab fa-facebook"></i></a>
    </div>
-    <p><button class="contactItems" style="background-color:#C71585;">Contact</button></p>
+    <!-- <p><button class="contactItems" style="background-color:#C71585;">Contact</button></p> -->
   </div>
 
-<div class="commomCard">
+<div class="commomCard" style="border-bottom: 5px solid black; background-color:#f5f5f0;">
    <img src="disha-patani-bollywood-hd-wallpaper-preview.jpg"  class="animated infinite jackInTheBox delay-2s slower" alt="salman khan">
    <h1 class="actorName">Disha Patani</h1>
-   <p class="actorDescriptions">Disha Patani is an Indian actress and indian who works primarily in Hindi films.</p>
+   <p class="actorDescriptions">Disha Patani is an Indian actress and
+      indian who works primarily in Hindi films.</p>
    <div class="social-media-icons" style="margin: 15px 0;">
      <a href="#"><i class="fab fa-instagram"></i></a>
      <a href="#"><i class="fab fa-twitter"></i></a>
      <a href="#"><i class="fab fa-linkedin-in"></i></a>
      <a href="#"><i class="fab fa-facebook"></i></a>
   </div>
-   <p><button class="contactItems">Contact</button></p>
+   <!-- <p><button class="contactItems">Contact</button></p> -->
  </div>
 
 
 
 
 
-<div class="commomCard">
-   <img src="katrina.jpg" alt="salman khan"   class="animated infinite rotateIn delay-2s slower">
-   <h1 class="actorName" style="color:#FF8C00;">Katrina Kaif</h1>
-   <p class="actorDescriptions">Katrina Kaif is an English actress who works in Hindi films. She has established herself in Bollywood.</p>
+<div class="commomCard" style="border-bottom: 5px solid #FF8C00; background-color:#ffffe6;">
+   <img src="MD.jpg" alt="salman khan"   class="animated infinite rotateIn delay-2s slower">
+   <h1 class="actorName" style="color:#FF8C00;">Madhuri Dixit</h1>
+   <p class="actorDescriptions">Indian actress, producer, and television personality.
+      influential celebrities of Indian cinema</p>
    <div class="social-media-icons" style="margin: 15px 0;">
      <a href="#"><i class="fab fa-instagram"></i></a>
      <a href="#"><i class="fab fa-twitter"></i></a>
      <a href="#"><i class="fab fa-linkedin-in"></i></a>
      <a href="#"><i class="fab fa-facebook"></i></a>
   </div>
-   <p><button class="contactItems" style="background-color:#FF8C00;">Contact</button></p>
+   <!-- <p><button class="contactItems" style="background-color:#FF8C00;">Contact</button></p> -->
  </div>
 
 
@@ -124,33 +210,36 @@
  </div>
  </section>
 
- <section id="musicSection">
+ <section id="funMusicSection">
+        <h1 class="section-heading">
+          <span>
+              <i class="far fa-grin-hearts"></i>
+          </span>
+          <span style="color:yellow;"> Lets Have Some Fun With Musics.</span>
+          <span>
+             <i class="far fa-grin-hearts"></i>
+          </span>
+      </h1>
 
-     <h1 id="textHeader"><span class="logoSmile">
-       <i class="far fa-grin-hearts"></i>
-     </span><span>Lets Have Some Fun With Musics</span>
-     <span>
-       <i class="far fa-grin-hearts"></i>
-     </span>
-   </h1>
 
    <div id="scrolledImageSection">
      <div class="commomImageSection">
-       <img src="arjitSIngh.jpg">
-       <h1 style="color:red;">Arjit Singh</h1>
+       <img src="arjitSIngh.jpg" class="fadeProperty">
+       <h1>Arjit Singh</h1>
+
        </div>
        <div class="commomImageSection">
-         <img src="neha.jpg">
-         <h1 style="color:red;">Neha Kakkar</h1>
+         <img src="neha.jpg"  class="fadeProperty">
+         <h1>Neha Kakkar</h1>
          </div>
          <div class="commomImageSection">
-           <img src="fatehAli.jpg">
-           <h1 style="color:red;">Rahat Fateh Ali</h1>
+           <img src="fatehAli.jpg"  class="fadeProperty">
+           <h1 style="font-size:1.7rem;">Rahat Fateh Ali Khan</h1>
            </div>
-         <!-- <audio controls  style="width:160px;">
-           <source src="Audios\8 Parche - Baani Sandhu (DjPunjab.Com).mp3">
-         </audio> -->
+
      </div>
+   </section>
+    <section id="musicSection">
      <div id="funWithMusicSection"  style="justify-content:center;">
        <div class="funWithMusicCommonClass">
          <img src="Images\tum hi ho.jpg" alt="tum hi ho"/>
@@ -244,6 +333,130 @@
      </div>
 
    </section>
+
+      <section id="artistSection">
+
+          <marquee behavior="scroll" direction="left" scrollamount="15" id="gallery">
+
+            <div id="artistContainer">
+
+
+            <img src="Artists\hot-Shirley-Setia.jpg" style="border:2px solid gray;">
+
+
+
+
+             <img src="Artists\himesh Reshammiya.jpg"  style="border:2px solid gray;">
+
+
+
+             <img src="Artists\Simi-Chahal.jpg"   style="border:2px solid gray;">
+
+
+
+             <img src="Artists\sonuNigam.jpg"   style="border:2px solid gray;">
+
+
+             <img src="Artists\diljit_dosanjh-1.jpg"   style="border:2px solid gray;">
+
+
+
+            <img src="Artists\shreya.jpg"  style="border:2px solid gray;">
+
+
+
+            <img src="Artists\sanu.jpg"  style="border:2px solid gray;">
+
+
+            <img src="Artists\lata-mangeshkar.jpg"  style="border:2px solid gray;">
+
+          </div>
+
+        </marquee>
+
+        <div style="text-align:center;">
+          <h1>YOU CAN SEARCH HERE</h1>
+          <form>
+          <input type="text" id="searchMusic" placeholder="Search Your Songs" required/>
+          <input type="submit" value="search" id="submitSong"/>
+        </form>
+        </div>
+
+
+
+      </section>
+
+      <section id="contact" style=" background-image: linear-gradient(to right,#000000, #0f0f0a);">
+         <h1 class="section-heading mb50px">
+            <span>
+              <i class="far fa-address-card"></i>
+            </span>
+            <span> Contact </span>
+          </h1>
+          <div id="contact-container">
+            <div id="contact-form-container">
+                  <form id="contact-form">
+                    <input id="input-name" name="name" type="text" placeholder="Your Name">
+                    <input id="input-email" name="input-email" type="text" required placeholder="Your Email">
+                    <textarea id="input-message" name="input-message" rows="2" cols=40 placeholder="Message"></textarea>
+                    <button class="sub-btn" type="submit">SEND MESSAGE</button>
+                  </form>
+            </div>
+         <div id="my-details-container">
+              <h3> Get In touch </h3>
+                <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                   when an unknown printer took a galley of type and scrambled it to make a type
+                   specimen book.
+                </p>
+              <h3> My Address </h3>
+                <div class="my-details-info-container">
+                  <i class="fas fa-map-marker-alt"></i>
+                    <span>Patiala, India</span>
+                </div>
+                <div class="my-details-info-container">
+                  <i class="fas fa-mobile-alt"></i>
+                    <span>9878483238</span>
+                </div>
+                <div class="my-details-info-container">
+                  <i class="far fa-envelope"></i>
+                    <span>lk689735@gmail.com</span>
+                </div>
+            </div>
+           </div>
+        <div class="text-center social-icons">
+            <ul class="horizontal-list">
+                <li>
+                   <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://plus.google.com/u/0/103030702784925512939" target="_blank">
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+                </li>
+                <li>
+                <a href="https://www.facebook.com/facebookappIndia/?brand_redir=20531316728" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                 </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                 </a>
+                </li>
+           </ul>
+        </div>
+      </section>
+      <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
  <script src="script.js"></script>
   </body>
 </html>
