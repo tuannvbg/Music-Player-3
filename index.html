@@ -335,6 +335,7 @@
    </section>
 
       <section id="artistSection">
+        <h1 class="section-heading section-heading-effect"><span>Indian Artists</span></h1>
 
           <marquee behavior="scroll" direction="left" scrollamount="15" id="gallery">
 
@@ -374,12 +375,16 @@
 
         </marquee>
 
-        <div style="text-align:center;">
-          <h1>YOU CAN SEARCH HERE</h1>
-          <form>
+        <div id="getMusic" class="d-flex flex-column align-items-center p-4">
+          <h1 class="section-heading">You Can Search Here</h1>
+
+          <input type="text" placeholder="Enter Your Song" class="searchSong">
+          <button type="button" id="button">Search</button>
+          <!-- <form id="searchMusicForm">
           <input type="text" id="searchMusic" placeholder="Search Your Songs" required/>
           <input type="submit" value="search" id="submitSong"/>
-        </form>
+        </form> -->
+
         </div>
 
 

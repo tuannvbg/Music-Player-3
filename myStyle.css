@@ -36,7 +36,7 @@ body{
 /* Description Section */
 #about-para {
     padding: 12px;
-    width: 70%;
+    width: 80%;
     height: 100%;
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
@@ -54,7 +54,7 @@ body{
 
  #caption{
    position: absolute;
-   left:35%;
+   left:30%;
    top: 60%;
  }
 #caption h1{
@@ -154,18 +154,18 @@ width: 100%;
 
 .section-heading{
   text-align: center;
-  font-size: 45px;
+  font-size: 48px;
   font-weight: 500;
   font-family:cursive;
-  color:#66ffcc;
+  color:##00ffff;
 animation: myAnimation 2s ease-in-out infinite alternate;
 }
 @keyframes myAnimation {
     from{
-      color:red;
+      color:#00ffff;
     }
     to{
-      color:orange;
+      color:#3366cc;
     }
 }
 .section-heading span{
@@ -295,7 +295,7 @@ background-color: white;
   border-radius: 50%;
   margin: 30px;
 
-/* animation: myAnimationArtist 2s ease-in-out infinite alternate; */
+animation: myAnimationArtist 2s ease-in-out infinite alternate;
 }
 
 
@@ -304,25 +304,54 @@ background-color: white;
 } */
 @keyframes myAnimationArtist {
   0%{
-      box-shadow: 0px 0px 0px gray;
+      box-shadow: 0px 0px 1px #b3cccc,0px 0px 2px #b3cccc,0px 3px 0px #b3cccc,0px 0px 4px #b3cccc;
   }
   20%{
-      box-shadow: 0px 0px 3px gray;
+      box-shadow: 0px 0px 2px #b3cccc,0px 0px 3px #85adad,0px 0px 4px #85adad,0px 0px 5px #85adad;
   }
 
-  40%{
-      box-shadow: 0px 0px 6px gray;
+}
+.section-heading-effect{
+  animation: textHeadingAnimation 2s ease-in-out infinite alternate;
+}
+@keyframes textHeadingAnimation {
+  from{
+    text-shadow: 0px 0px 2px #ff3333,0px 0px 4px #ffe6cc,0px 0px 6px #ffe6cc,0px 0px 8px #ffe6cc;
   }
-  60%{
-      box-shadow: 0px 0px 9px gray;
+  to{
+        text-shadow: 0px 0px 4px #ffe6cc,0px 0px 6px #ffcc99,0px 0px 8px #ffcc99,0px 0px 10px #ffcc99;
   }
+}
 
-  80%{
-      box-shadow: 0px 0px 12px gray;
-  }
-  100%{
-      box-shadow: 0px 0px 15px gray;
-  }
+#getMusic input[type="text"]
+{
+  width: 360px;
+  height: 55px;
+  border-style: none;
+  background-color:#f5e6ff;
+  border: 0px solid transparent;
+  border-bottom: 2px solid #2f2f1e;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+
+}
+.searchSong::placeholder{
+  text-align: center;
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 400;
+  color: #ffc266;
+
+}
+#getMusic button[type="button"]
+{
+  height: 53px;
+  width: 135px;
+  color:blue;
+  margin: 20px;
+  font-size: 1.4rem;
 
 }
 
