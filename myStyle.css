@@ -272,6 +272,12 @@ background-color: white;
 .audioSection audio{
   width: 98%;
 }
+.audioSection1 audio{
+  width: 60%;
+}
+
+
+
 
      /* Artist Container Section */
 
