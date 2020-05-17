@@ -1,3 +1,13 @@
+/* Home Section */
+#Home{
+  background-image: url("taylor-swift.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+
 ul{
   padding: 0px;
 margin-left:2%;
@@ -5,28 +15,49 @@ margin-right:2%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  list-style: none;
 
 
 }
 ul li{
   height: 100px;
   width: 360px;
-  list-style-type: none;
-  margin-top: 10px;
+  margin-top: 20px;
+
    /* border: 2px solid yellow; */
    /* margin: auto; */
 }
+
 ul li a{
   margin: auto;
   color:yellow;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   padding-top: 15px;
   font-family: cursive;
+  letter-spacing: 6px;
   font-weight: bold;
-
+  text-decoration:none;
+  transition: color 0.4s, border-bottom 4s;
+  animation: headerTextAnimation 2s ease-in-out infinite alternate;
+}
+ul li a:hover{
+  color:lightgray;
+  /* border-bottom: 1px solid black; */
+  text-decoration: none;
+  /* border-style:none; */
+  /* border: none; */
+}
+@keyframes headerTextAnimation {
+  0%{
+    color:3px 3px 6px yellow;
+  }
+  100%{
+    text-shadow: 5px 5px 10px orange;
+  }
 
 }
+
 .logoImg{
   align-items: center;
   text-align: center;
@@ -37,11 +68,7 @@ ul li a{
 
 
 
-#main-item{
-  /* background-color: rgb(19, 216, 206); */
-   /* background: linear-gradient(to top, #3333ff 0%, #0066cc 100%); */
-    background: linear-gradient(to top, #0099ff 0%, #0099cc 100%);
-}
+
 .carousel{
   margin: auto;
   display: flex;
@@ -50,8 +77,8 @@ ul li a{
 }
 #carousel-item{
   padding: 5vh;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 .carousel-image{
   /* max-height: 30vh; */
@@ -62,12 +89,12 @@ ul li a{
   /* min-height: 90px; */
   /* min-width: 20vw; */
   /* min-width: 180px; */
-  height: 250px;
-  width: 380px;
+   height: 250px;
+   width: 380px;
    transition: 250ms all;
    position: relative;
    box-shadow: inset;
-   border:1px solid gray;
+   /* border:1px solid gray; */
      /* box-shadow:0px 0px 10px gray; */
      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
 }
@@ -96,16 +123,22 @@ ul li a{
   text-align: center;
   letter-spacing: 1.8px;
   color: #ff1a1a;
+  margin-bottom: 10px;
   animation: glow 4s ease-in-out infinite alternate;
 }
 @keyframes glow {
   to{
-    text-shadow: 0px 0px 5px red,0px 0px 10px red,0px 0px 15px #ffff1a,0px 0px 20px #ffff1a,0px 0px 25px #ffff1a,0px 0px 30px #ffff1a,0px 0px 40px #ffff1a;
+    text-shadow: 0px 0px 5px orange,0px 0px 10px orange,0px 0px 15px #4dffdb,0px 0px 20px #4dffdb,0px 0px 25px #4dffdb,0px 0px 30px #4dffdb,0px 0px 40px #4dffdb;
   }
   from{
-       text-shadow: 0px 0px 10px red,0px 0px 15px #ffff66,0px 0px 20px #ffff66, 0px 0px 25px #ffff66, 0px 0px 30px #ffff66,0px 0px 35px #ffff66,0px 0px 40px #ffff66,0px 0px 45px #ffff66,;
+       text-shadow: 0px 0px 10px orange,0px 0px 15px #00ffcc,0px 0px 20px #00ffcc, 0px 0px 25px #00ffcc, 0px 0px 30px #00ffcc,0px 0px 35px #00ffcc,0px 0px 40px #00ffcc,0px 0px 45px ##00ffcc;
   }
 
+}
+
+#About{
+  background-color: #f0d19e;
+  margin-top:-7px;
 }
 
 .about-para {
@@ -113,25 +146,21 @@ ul li a{
     width: 80%;
     height: 100%;
     margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: cursive;
     text-align: justify;
     color: grey;
     line-height: 30px;
     font-weight: 150;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 .text-highlight {
-    color: #ffa32e;
+    color: blue;
     font-weight: 600;
 
 }
 
-#actorSection{
-    background-image: linear-gradient(to right, rgb(255, 230, 230), rgb(255, 235, 204), rgb(255, 255, 230), rgb(230, 255, 230),rgb(245, 245, 240));
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
  #container{
   display:flex;
@@ -223,6 +252,7 @@ width: 100%;
   font-weight: 500;
   font-family:cursive;
   color:##00ffff;
+  opacity: 1;
 animation: myAnimation 2s ease-in-out infinite alternate;
 }
 @keyframes myAnimation {
@@ -239,7 +269,7 @@ animation: myAnimation 2s ease-in-out infinite alternate;
 }
 
 
-#funMusicSection{
+#Songs{
   background-image: url("1.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -313,7 +343,32 @@ animation: myAnimation 2s ease-in-out infinite alternate;
   opacity: 0.9;
 }
 
-.funWithMusicCommonClass{
+#pads{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#pads > div{
+  margin: 50px;
+  height: 410px;
+  width: 450px;
+  transition: 250ms all;
+     /* box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2); */
+
+}
+#pads >div:hover{
+  transform: scale(1.2);
+}
+
+#pads > div img{
+  height: 100%;
+  width: 100%;
+   border-radius: 5%;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+ .funWithMusicCommonClass{
 background-color: white;
   height: 290px;
   width: 225px;
@@ -346,17 +401,20 @@ background-color: white;
 
      /* Artist Container Section */
 
-      #artistSection{
-       background-image: linear-gradient(to right,rgb(255, 255, 230),rgb(230, 255, 255));
+      #Search{
+       /* background-image: linear-gradient(to right,rgb(255, 255, 230),rgb(230, 255, 255)); */
+       background-image: url("image4.jpg");
        background-position: center;
        background-repeat: no-repeat;
        background-size: cover;
+       opacity: 0.9;
      }
  #artistContainer{
   display: flex;
   flex-direction: row;
   /* flex-wrap: wrap; */
   justify-content: space-around;
+  opacity: 1;
 }
 #artistContainer img{
   height: 260px;
@@ -406,6 +464,7 @@ animation: myAnimationArtist 2s ease-in-out infinite alternate;
   border-bottom-left-radius: 40px;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
+  opacity: 1;
 
 }
 .searchSong::placeholder{
@@ -415,6 +474,7 @@ animation: myAnimationArtist 2s ease-in-out infinite alternate;
   font-weight: 400;
   color: #ffc266;
 
+
 }
 #getMusic button[type="button"]
 {
@@ -423,6 +483,11 @@ animation: myAnimationArtist 2s ease-in-out infinite alternate;
   color:blue;
   margin: 20px;
   font-size: 1.4rem;
+  opacity: 1;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius:30px;
+  border-bottom-right-radius: 30px;
 
 }
 
@@ -434,14 +499,21 @@ animation: myAnimationArtist 2s ease-in-out infinite alternate;
 
 
 
-    background-color: #0abcf9;
-    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    background-color: #181818;
+    /* background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%); */
 
     color: white;
     padding-bottom: 40px;
 }
+.contact-section-heading{
+  color:green;
+  text-align: center;
+  font-size: 2.4;
+  font-weight: bold;
+  font-family: cursive;
+}
 
-#contact h1,
+#Contact h1,
 #contact h1 span {
     color: white;
 }

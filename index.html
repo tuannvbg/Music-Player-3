@@ -18,7 +18,7 @@
   </head>
   <body>
 
-    <div id="main-item">
+    <section id="Home">
 
     <nav>
          <ul>
@@ -33,26 +33,24 @@
            </li>
 
            <li>
-             <a href="#">About</a>
+             <a href="#About">About</a>
            </li>
 
              <li>
-               <a href="#">Songs</a>
+               <a href="#Songs">Songs</a>
              </li>
 
            <li>
-             <a href="#">Search</a>
+             <a href="#Search">Search</a>
            </li>
 
            <li>
-             <a href="#">Contact</a>
+             <a href="#Contact">Contact</a>
            </li>
 
 
          </ul>
      </nav>
-
-
 
 <section class="carousel">
    <div id="carousel-item">
@@ -74,12 +72,16 @@
    </div>
 
 </section>
+
 <div id="caption">
   <h1>NO MUSIC<br>NO LIFE</h1>
 </div>
 
+</section>
 
-<section id="descriptionSection"  style="background-color:white";>
+
+<section id="About">
+
   <div class="about-para">
     <p>Music is a form of art; an expression of emotions through
     harmonic frequencies. <span class="text-highlight">Music is also
@@ -90,12 +92,9 @@
    Music gives a soul to the universe, wings to the mind, flight to the
    imagination and life to everything.Music is the shorthand of emotion</p>
   </div>
-</section>
 
-</div>
-
-    <section id="actorSection">
-    <div id="container">
+    <!-- <section id="actorSection"> -->
+      <div id="container">
 
    <div class="commomCard" id="AmitabhCard">
       <img src="Amitabh.jpg" alt="salman khan"  class="animated infinite rotateInUpLeft delay-2s">
@@ -209,7 +208,7 @@
  </div>
  </section>
 
- <section id="funMusicSection">
+ <section id="Songs">
         <h1 class="section-heading">
           <span>
               <i class="far fa-grin-hearts"></i>
@@ -219,26 +218,35 @@
              <i class="far fa-grin-hearts"></i>
           </span>
       </h1>
+      <div id="pads">
+        <div id="pad1">
+          <img src="Images\fatehAli.jpg">
+          <audio class="sound">
+           <source src="Audios\Tumhe Dillagi.m4r">
+         </audio>
+        </div>
+
+        <div id="pad2">
+          <img src="Images\neha.jpg">
+          <audio class="sound">
+           <source src="Audios\nikle-current-ringtone-download-6222.mp3">
+         </audio>
+        </div>
+
+        <div id="pad3">
+          <img src="Images\old.jpg">
+          <audio class="sound">
+           <source src="Audios\Ek Ladki Ko Dekha Toh Aisa Laga.m4r">
+         </audio>
+        </div>
+
+      </div>
+
+<!--
 
 
-   <div id="scrolledImageSection">
-     <div class="commomImageSection">
-       <img src="arjitSIngh.jpg" class="fadeProperty">
-       <h1>Arjit Singh</h1>
 
-       </div>
-       <div class="commomImageSection">
-         <img src="neha.jpg"  class="fadeProperty">
-         <h1>Neha Kakkar</h1>
-         </div>
-         <div class="commomImageSection">
-           <img src="fatehAli.jpg"  class="fadeProperty">
-           <h1 style="font-size:1.7rem;">Rahat Fateh Ali Khan</h1>
-           </div>
-
-     </div>
-   </section>
-    <section id="musicSection">
+    <section id="musicSection"> -->
      <div id="funWithMusicSection"  style="justify-content:center;">
        <div class="funWithMusicCommonClass">
          <img src="Images\tum hi ho.jpg" alt="tum hi ho"/>
@@ -306,34 +314,17 @@
 
      </div>
 
-     <div id="funWithMusicSection" style="justify-content:center;">
-
-       <div class="funWithMusicCommonClass">
-         <img src="Images\barood-dil.jpg" alt="tum hi ho"/>
-         <div class="audioSection">
-           <audio controls>
-             <source src="Audios\Barood Dil - Korala Maan (DjPunjab.Com).mp3">
-           </audio>
-         </div>
-       </div>
 
 
 
-       <div class="funWithMusicCommonClass">
-         <img src="Images\sajjna.jpg" alt="tum hi ho"/>
-         <div class="audioSection">
-           <audio controls>
-             <source src="Audios\Pyari_Pyari_Do_Akhiyan_Sajjna_1.mp3">
-           </audio>
-         </div>
-       </div>
+
 
 
      </div>
 
    </section>
 
-      <section id="artistSection">
+      <section id="Search">
         <h1 class="section-heading section-heading-effect"><span>Indian Artists</span></h1>
 
           <marquee behavior="scroll" direction="left" scrollamount="15" id="gallery">
@@ -392,12 +383,9 @@
 
       </section>
 
-      <section id="contact" style=" background-image: linear-gradient(to right,#000000, #0f0f0a);">
-         <h1 class="section-heading mb50px">
-            <span>
-              <i class="far fa-address-card"></i>
-            </span>
-            <span> Contact </span>
+      <section id="Contact" style=" background-image: linear-gradient(to right,#000000, #0f0f0a);">
+         <h1 class="contact-section-heading mb50px" style="color:gray;">
+                   Contact
           </h1>
           <div id="contact-container">
             <div id="contact-form-container">
@@ -458,10 +446,7 @@
                 </li>
            </ul>
         </div>
-      </section>
-      <div style="background-color:yellow;height:300px;">
-        <span><img src="logo.png" height="350" width="350"><h1 style="color:red;">Ninja stdio</h1></span>
-      </div>
+
 
       <script
   src="https://code.jquery.com/jquery-3.4.1.js"

@@ -33,6 +33,35 @@ $.ajax({
 });
 });
 
+
+
+
+window.addEventListener("load", () => {
+  const sounds = document.querySelectorAll(".sound");
+  const pads = document.querySelectorAll("#pads div");
+
+  pads.forEach((pad, index) => {
+
+    pad.addEventListener("mouseover", function() {
+      sounds[index].currentTime = 0;
+      sounds[index].play();
+
+    });
+
+		pad.addEventListener("mouseout", function() {
+			sounds[index].pause();
+
+		});
+
+	  //  pad.addEventListener("click", function() {
+    //   sounds[index].currentTime = 0;
+    //   sounds[index].pause();
+		//
+    // });
+  });
+});
+
+
 // $("#searchResults").empty();
 // var searchRequest = $("#search")[0];
 // var specificSearch = searchRequest.value;
