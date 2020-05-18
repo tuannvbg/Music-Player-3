@@ -1,11 +1,11 @@
+// Feching Music Using Api
+
 var fetchMusic=$("#fetchMusic");
 $("#button").click(function(){
 	var song=$(".searchSong").val();
-
 $.ajax({
 	dataType : "jsonp",
 	url :  "https://itunes.apple.com/search?term="+song+"&limit="+16,
-
 	async : true,
 	success : function(data){
     var results=data.results;
@@ -24,48 +24,23 @@ $.ajax({
                  <p>${result.artistName}</p>
                  </div>
             </div>
-
-
            `)
        }
-		// showResults(data.results);
 	}
 });
 });
-
-
-
+    // Adding Music To Images
 
 window.addEventListener("load", () => {
   const sounds = document.querySelectorAll(".sound");
   const pads = document.querySelectorAll("#pads div");
-
   pads.forEach((pad, index) => {
-
     pad.addEventListener("mouseover", function() {
       sounds[index].currentTime = 0;
       sounds[index].play();
-
     });
-
 		pad.addEventListener("mouseout", function() {
 			sounds[index].pause();
-
 		});
-
-	  //  pad.addEventListener("click", function() {
-    //   sounds[index].currentTime = 0;
-    //   sounds[index].pause();
-		//
-    // });
   });
 });
-
-
-// $("#searchResults").empty();
-// var searchRequest = $("#search")[0];
-// var specificSearch = searchRequest.value;
-//
-//
-//   if (specificSearch == ""){
-//     return;

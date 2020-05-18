@@ -1,14 +1,11 @@
 /* Home Section */
 #Home{
-  background-image: url("taylor-swift.jpg");
+  background-image: url("Images/taylor-swift.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
-
 }
-
-
-ul{
+.header-container{
   padding: 0px;
 margin-left:2%;
 margin-right:2%;
@@ -16,19 +13,13 @@ margin-right:2%;
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
-
-
 }
-ul li{
+.header-container li{
   height: 100px;
   width: 360px;
   margin-top: 20px;
-
-   /* border: 2px solid yellow; */
-   /* margin: auto; */
 }
-
-ul li a{
+.header-container li a{
   margin: auto;
   color:yellow;
   font-size: 1.4rem;
@@ -41,12 +32,9 @@ ul li a{
   transition: color 0.4s, border-bottom 4s;
   animation: headerTextAnimation 2s ease-in-out infinite alternate;
 }
-ul li a:hover{
+.header-container li a:hover{
   color:lightgray;
-  /* border-bottom: 1px solid black; */
   text-decoration: none;
-  /* border-style:none; */
-  /* border: none; */
 }
 @keyframes headerTextAnimation {
   0%{
@@ -55,25 +43,17 @@ ul li a:hover{
   100%{
     text-shadow: 5px 5px 10px orange;
   }
-
 }
-
 .logoImg{
   align-items: center;
   text-align: center;
   height: 80%;
   width: 45%;
 }
-
-
-
-
-
 .carousel{
   margin: auto;
   display: flex;
   justify-content: center;
-  /* background-color: gray; */
 }
 #carousel-item{
   padding: 5vh;
@@ -81,21 +61,11 @@ ul li a:hover{
   margin-bottom: 2vh;
 }
 .carousel-image{
-  /* max-height: 30vh; */
-  /* max-height: 150px; */
-  /* max-width: 40vw; */
-  /* max-width: 200px; */
-  /* min-height: 10vh; */
-  /* min-height: 90px; */
-  /* min-width: 20vw; */
-  /* min-width: 180px; */
    height: 250px;
    width: 380px;
    transition: 250ms all;
    position: relative;
    box-shadow: inset;
-   /* border:1px solid gray; */
-     /* box-shadow:0px 0px 10px gray; */
      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
 }
 .carousel-img-1{
@@ -113,9 +83,7 @@ ul li a:hover{
 .carousel-image:hover{
   transform: scale(1.4);
   z-index: 5;
-
 }
-
 #caption h1{
   font-size: 4.3rem;
   font-weight: bold;
@@ -133,20 +101,16 @@ ul li a:hover{
   from{
        text-shadow: 0px 0px 10px orange,0px 0px 15px #00ffcc,0px 0px 20px #00ffcc, 0px 0px 25px #00ffcc, 0px 0px 30px #00ffcc,0px 0px 35px #00ffcc,0px 0px 40px #00ffcc,0px 0px 45px ##00ffcc;
   }
-
 }
-
 #About{
   background-color: #f0d19e;
   margin-top:-7px;
 }
-
 .about-para {
     padding: 12px;
     width: 80%;
     height: 100%;
     margin: auto;
-    /* font-family: Arial, Helvetica, sans-serif; */
     font-family: cursive;
     text-align: justify;
     color: grey;
@@ -157,22 +121,14 @@ ul li a:hover{
 .text-highlight {
     color: blue;
     font-weight: 600;
-
 }
-
-
-
  #container{
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
   justify-content:space-around;
 }
-
-
 /* ActorSection */
-
-
 .commomCard{
   height:350px;
   width:260px;
@@ -181,10 +137,7 @@ ul li a:hover{
    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
    text-align:center;
    background-color: white;
-   /* border: 2px solid red; */
-
 }
-
 .commomCard img{
    width:100%;
     height:50%;
@@ -192,31 +145,16 @@ ul li a:hover{
 .actorName{
   font-size: 27px;
 }
-
 .actorDescriptions{
   color:gray;
   font-size:17px;
-
 }
 .social-media-icons a{
       text-decoration:none;
       font-size:22px;
       color:black;
       margin:0 5px;
-      /* border: 2px solid gray; */
-      /* border-radius: 50%; */
-      /* animation: iconsAnimation 2s ease-in-out infinite alternate; */
-
 }
-/* @keyframes iconsAnimation {
-  from{
-      box-shadow: 0px 0px 10px gray;
-  }
-  to{
-    border-radius: 0px 0px 20px yellow;
-  }
-} */
-
 .social-media-icons a:hover{
   opacity:0.7;
 }
@@ -240,12 +178,7 @@ width: 100%;
   background-color: #ffffe6;
 }
 
-
-
-
-
 /* //Music Section */
-
 .section-heading{
   text-align: center;
   font-size: 48px;
@@ -265,27 +198,21 @@ animation: myAnimation 2s ease-in-out infinite alternate;
 }
 .section-heading span{
   color:red;
-  /* background-color: red; */
 }
-
-
 #Songs{
-  background-image: url("1.jpg");
+  background-image: url("Images/1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height:100%;
-  /* opacity: 0.9; */
 }
 #scrolledImageSection{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* justify-content: center; */
 }
-
 .commomImageSection{
   height:330px;
   width:280px;
@@ -295,9 +222,6 @@ animation: myAnimation 2s ease-in-out infinite alternate;
    text-align:center;
    background-color: #e6f2ff;
    border: 2px solid gray;
-   /* text-align: center; */
-   /* border-radius: 4px; */
-   /* border: 2px solid red; */
 }
 .commomImageSection img{
   height: 84%;
@@ -306,35 +230,14 @@ animation: myAnimation 2s ease-in-out infinite alternate;
 .commomImageSection h1{
   color:#ff9900;
   font-size: 2rem;
-  /* animation: textAnimation 2s ease-in-out infinite alternate; */
-
-  /* align-items: center; */
-  /* justify-content: center; */
 }
-/* @keyframes textAnimation {
-  from{
-    visibility: hidden;
-  }
-  to{
-    visibility: visible;
-  }
-
-} */
-
-
 /* Playing music section */
-
-
 #musicSection{
-      /* background-image:linear-gradient(to right,rgb(16, 16, 10),rgb(93, 93, 60), rgb(31, 31, 20), rgb(31, 31, 20),rgb(16, 16, 10)); */
   background-color:black;
           background-position: center;
           background-repeat: no-repeat;
            background-size: cover;
-           /* opacity: 0.5; */
-            /* filter: blur(8px); */
             }
-
 #funWithMusicSection{
   display: flex;
   flex-direction: row;
@@ -342,7 +245,6 @@ animation: myAnimation 2s ease-in-out infinite alternate;
   justify-content:space-around;
   opacity: 0.9;
 }
-
 #pads{
   display: flex;
   flex-direction: row;
@@ -353,21 +255,16 @@ animation: myAnimation 2s ease-in-out infinite alternate;
   height: 410px;
   width: 450px;
   transition: 250ms all;
-     /* box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2); */
-
 }
 #pads >div:hover{
   transform: scale(1.2);
 }
-
 #pads > div img{
   height: 100%;
   width: 100%;
    border-radius: 5%;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
 }
-
-
  .funWithMusicCommonClass{
 background-color: white;
   height: 290px;
@@ -380,13 +277,10 @@ background-color: white;
  cursor: pointer;
  margin: 50px 50px;
  opacity: 0.9;
-
  }
-
 .funWithMusicCommonClass img{
   height:78%;
   width: 100%;
-
   box-shadow: 0px 0px 20px black;
 }
 .audioSection audio{
@@ -395,15 +289,10 @@ background-color: white;
 .audioSection1 audio{
   width: 60%;
 }
-
-
-
-
      /* Artist Container Section */
-
       #Search{
        /* background-image: linear-gradient(to right,rgb(255, 255, 230),rgb(230, 255, 255)); */
-       background-image: url("image4.jpg");
+       background-image: url("Images/image4.jpg");
        background-position: center;
        background-repeat: no-repeat;
        background-size: cover;
@@ -412,25 +301,17 @@ background-color: white;
  #artistContainer{
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
   justify-content: space-around;
   opacity: 1;
 }
 #artistContainer img{
   height: 260px;
   width: 260px;
-
   text-align: center;
   border-radius: 50%;
   margin: 30px;
-
 animation: myAnimationArtist 2s ease-in-out infinite alternate;
 }
-
-
-/* #gallery img:hover{
-    box-shadow: 10px 10px 20px gray;
-} */
 @keyframes myAnimationArtist {
   0%{
       box-shadow: 0px 0px 1px #b3cccc,0px 0px 2px #b3cccc,0px 3px 0px #b3cccc,0px 0px 4px #b3cccc;
@@ -451,7 +332,6 @@ animation: myAnimationArtist 2s ease-in-out infinite alternate;
         text-shadow: 0px 0px 4px #ffe6cc,0px 0px 6px #ffcc99,0px 0px 8px #ffcc99,0px 0px 10px #ffcc99;
   }
 }
-
 #getMusic input[type="text"]
 {
   width: 360px;
@@ -465,7 +345,7 @@ animation: myAnimationArtist 2s ease-in-out infinite alternate;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
   opacity: 1;
-
+  color:yellow;
 }
 .searchSong::placeholder{
   text-align: center;
@@ -473,8 +353,6 @@ animation: myAnimationArtist 2s ease-in-out infinite alternate;
   font-style: italic;
   font-weight: 400;
   color: #ffc266;
-
-
 }
 #getMusic button[type="button"]
 {
@@ -488,86 +366,68 @@ animation: myAnimationArtist 2s ease-in-out infinite alternate;
   border-bottom-left-radius: 30px;
   border-top-right-radius:30px;
   border-bottom-right-radius: 30px;
-
+  color:yellow;
 }
-
-
 /* Contact Section */
 
 
-#contact {
-
-
-
-    background-color: #181818;
-    /* background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%); */
-
-    color: white;
+#Contact {
+    background-color: #0f0f0a;
     padding-bottom: 40px;
 }
 .contact-section-heading{
-  color:green;
+  color:#4d4dff;
   text-align: center;
-  font-size: 2.4;
+  font-size: 2.6;
   font-weight: bold;
   font-family: cursive;
 }
 
-#Contact h1,
+/* #Contact h1,
 #contact h1 span {
     color: white;
-}
-
+} */
 #contact-form {
     margin-left: 20%;
 }
-
 #contact-container {
     display: flex;
 }
-
 #my-details-container {
     width: 35%;
-    margin-left: 6%;
+    margin-left: 5%;
 }
 
 #my-details-container h3 {
-    color: white;
+    color: #a314f5;
     font-weight: 550;
     font-size: 1.2rem;
+    margin-top: 8px;
 }
-
 #contact-form-container {
     width: 50%;
 }
-
 #my-details-container p {
     color: #d9dcdd;
     font-size: 0.9rem;
 }
-
 .my-details-info-container {
     margin-bottom: 20px;
     color: #d9dcdd;
 }
-
 .my-details-info-container span {
     margin-left: 0.4rem;
     font-size: 0.95rem;
 }
-
 .my-details-info-container i {
     color: white;
 }
-
 .my-details-icon {
     width: 1rem;
     height: 1rem;
     vertical-align: bottom;
     margin-right: 0.5rem;
 }
-
-
 #contact-form input,
 textarea {
     max-width: 90%;
@@ -575,16 +435,12 @@ textarea {
     padding: 4px 10px;
     border: 0px solid transparent;
     border-bottom: 2px solid white;
-    /*#2857a4*/
-
     background: transparent;
     width: 90%;
     line-height: 1.6;
     font-size: 1.05rem;
-}
-
-
-
+    color:yellow;
+  }
 #contact-form button[type="submit"] {
     background: transparent;
     /*#1a1a1a;*/
@@ -604,35 +460,64 @@ textarea {
 
 #contact-form button:hover {
     background: white;
-    color: #13386fe0;
+    color:green;
 }
-
+#personal-details{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -60px;
+  margin-top: 10px;
+}
+.person-name{
+  background-color: #ffb24c;
+  height: 90px;
+  width: 330px;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 15px;
+  box-shadow: 3px 3px 6px gray;
+}
+.person-name p{
+  margin: auto;
+  padding: 20px;
+  color:#a314f5;
+}
+.person-images{
+  height: 120px;
+  width: 120px;
+  position: relative;
+  left:50px;
+}
+.person-images img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border:8px solid #ffb24c;
+}
 #contact .social-icons li a i {
 
     font-size: 1.2rem;
     margin: 40px 10px 10px;
     padding: 10px 14px 20px 10px;
-
 }
-
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
     outline: none;
 }
-
 .horizontal-list
   {
     list-style: none;
     padding-left: 0px;
     margin: 0px;
+    /* margin-top: 20px; */
   }
-
 .horizontal-list li
   {
     display: inline-block;
-    margin: 0px 8px 8px 0px;
+    margin: 10px 8px 8px 10px;
     font-weight: 100;
     font-size: 1.2rem;
   }
@@ -642,7 +527,6 @@ button:focus {
     color: white;
     text-decoration: none;
   }
-
 .social-icons li a i
  {
     padding: 15px;
@@ -672,8 +556,6 @@ button:focus {
       background-color:#94b8b8;
     }
   }
-
-
 .social-icons li a i:hover {
     box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
 }
